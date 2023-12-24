@@ -1,0 +1,12 @@
+AVL trees are a type of self-balancing binary search tree, where the height of the two child subtrees of any node differs by at most one. This balancing property ensures that the tree remains balanced, which helps maintain efficient search, insertion, and deletion operations. AVL trees are named after their inventors Adelson-Velsky and Landis.
+
+Here's a brief explanation of AVL tree operations and an example:
+
+Insertion:
+When a new node is inserted into the AVL tree, the tree is updated, and then the balance factor of each node along the path from the inserted node to the root is checked. If any node violates the AVL property (balance factor > 1 or < -1), a rotation is performed to restore balance.
+
+Deletion:
+After deleting a node, the balance factor of each node along the path from the deleted node to the root is checked. If the balance factor becomes greater than 1 or less than -1, rotations are performed to restore balance.
+
+Rotations:
+There are four types of rotations in AVL trees: left rotation, right rotation, left-right rotation (also called LR rotation), and right-left rotation (also called RL rotation). Rotations are performed to maintain the AVL property.
